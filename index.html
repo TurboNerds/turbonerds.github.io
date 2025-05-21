@@ -368,51 +368,27 @@
                     </div>
                 </div>
             </section>
-            
-            <section class="contact-form">
-                <h2>get in touch</h2>
-                
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
-            </section>
+			
+			<section class="content">
+				<h2>about us</h2>
+				we are a team of developers who like to make fun and silly web games.
+				
+				you can check out our itch.io pages here:
+				
+				<a href="https://dpolk.itch.io/" class="game-link">dpolk</a>
+				<a href="https://jayv0.itch.io/" class="game-link">jayv0</a>
+				
+			</section>
+			
+			<section class="content">
+				<h2>get in touch</h2>
+				
+				<a href="https://forms.gle/T951bEPUTcGMthPNA" class="game-link">contact form</a>
         </main>
         
         <footer>
             <p>© 2025 TurboNerds Games</p>
         </footer>
     </div>
-    
-    <script>
-        // Simple form handling (for demo purposes)
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            // In a real implementation, you would send this data to a server
-            // For demo purposes, we'll just show an alert
-            alert(`Thanks for your message, ${name}! We'll get back to you at ${email} soon.`);
-            
-            // Reset the form
-            this.reset();
-        });
-    </script>
 </body>
 </html>
